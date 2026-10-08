@@ -1,0 +1,53 @@
+{
+  "name": "@jasbros2568/react-viewer-360",
+  "version": "1.0.0",
+  "description": "Drag-to-rotate 360° product viewer for React, built from an image sequence. Touch, mouse and keyboard support, preloading, autoplay and a scrub slider.",
+  "keywords": [
+    "react",
+    "360",
+    "360-viewer",
+    "product-viewer",
+    "turntable",
+    "image-sequence",
+    "spin",
+    "rotate"
+  ],
+  "license": "MIT",
+  "author": "jasbros2568",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": true,
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "vite": "^8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
